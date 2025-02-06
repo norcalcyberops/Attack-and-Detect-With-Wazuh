@@ -49,7 +49,7 @@ This project was created by Grant Collins and can be accessed for free at https:
 
 ![Screenshot 2025-02-05 180830](https://github.com/user-attachments/assets/08325ee8-787d-40de-a641-179148cb5614)
 
-![VirtualBox_Windows Server 2025_05_02_2025_18_34_54](https://github.com/user-attachments/assets/397cf2a9-e4f3-425f-91a5-88a24347b026)
+![Screenshot 2025-02-05 183736](https://github.com/user-attachments/assets/cdc01f42-6e80-4e00-8a3b-e6ee08cad4c0)
 
 As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
 
