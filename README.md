@@ -41,6 +41,8 @@ This project was created by Grant Collins and can be accessed for free at https:
    
 ![Screenshot 2025-02-05 201101](https://github.com/user-attachments/assets/a939f5ec-c157-4247-a64f-d98686d17c1b)
 
+# Security Implications
+   * Running an XDR and SIEM services provide significant advantages to monitor, detect, prevent, and respond to security-related activity
    
  * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
 
