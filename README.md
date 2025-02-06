@@ -83,3 +83,12 @@ As shown in the topology above, the Email Server and three PC's were connected t
       
    ![Screenshot 2025-02-05 184601](https://github.com/user-attachments/assets/2fd4a4d8-0c93-4fb5-8efa-680d437cec1a)
 
+4. Conduct End-to-End Attacks
+
+   Using Kali Linux as the attacker machine, an end-to-end multi-phase attack was conducted involving a number to tactics.
+
+   Initial reconnaissance - Nmap scan to scan ports on the Email-svr machine at 10.0.0.8
+
+   ![Screenshot 2025-02-05 185054](https://github.com/user-attachments/assets/92393d14-367f-4226-920f-ab2ecdbfe3da)
+
+
