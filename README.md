@@ -28,8 +28,16 @@ This project was created by Grant Collins and can be accessed for free at https:
 
 ![Screenshot 2025-02-05 173214](https://github.com/user-attachments/assets/c947abc2-27de-4d0b-b80b-503681dfdf4c)
 
- As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
+![Screenshot 2025-02-05 180830](https://github.com/user-attachments/assets/08325ee8-787d-40de-a641-179148cb5614)
 
+As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
+
+ # Tools
+
+ * Microsoft Active Directory: A directory service used for managing and organizing network resources and permissions in a Windows environment.
+ * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
+ * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
+  
 2. Introduce Vulnerable Configurations
 
    In order to conduct the end-to-end attack, a number of vulnerable configurations were introduced into the environment.
