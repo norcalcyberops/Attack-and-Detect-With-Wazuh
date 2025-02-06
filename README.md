@@ -27,7 +27,9 @@ This project was created by Grant Collins and can be accessed for free at https:
       * Authorization: Grants or denies access to network resources based on permissions
       * Centralized Management: Centralizes control over users, computers, and other resources
  
- * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
+ * Wazuh: An open-source security monitoring platform that provides extended detection response (XDR) and System Information and Event Managment (SIEM) to protect cloud, container, and server workloads. It provides intrustion detection,              log analysis, vulnerability detection, and compliance reporting.
+  Wazuh acts as a SIEM solution by collecting and analyzing security data from multiple sources, detecting threats in real-time and facilitating efficient incident response.
+
    A dedicated security server is critical for ensuring the performance, security, and scalability of your monitored analysis stack. Here's why:
     - Isolation: Running resource-intensive tools on a dedicated server prevents performance degradation caused by workloads on shared resources. Each application demands significant CPU, RAM, and disk I/O to function efficiently.
     - Security Context: Security tools process sensitive data, including logs and vulnerability scans. A dedicated server isolates sensitive data from unrelated systems.
