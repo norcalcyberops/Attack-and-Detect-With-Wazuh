@@ -25,6 +25,15 @@ This project was created by Grant Collins and can be accessed for free at https:
  * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
  * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
 
+# Security Implications
+  
+  * Enhanced Security Awareness:
+    - Practicing in a simulated enterprise network allows users to understand and mitigate real-world vulnerabilities, improving their ability to secure actual networks
+  * Controlled Environment for Testing:
+    - Provides a safe space to explore exploits, malware behavior, and defense strategies without risking production systems or sensitive data
+  * Experience with Enterprise Technologies:
+    - Offers hands-on experience with technologies like Active Directory, VPNs, and SIEMS, critical for understanding attack surfaces and hardening systems
+
 # Main Steps
 
 1. Build an Enterprise Environment.
