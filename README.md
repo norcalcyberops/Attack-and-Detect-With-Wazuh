@@ -21,12 +21,12 @@ This project was created by Grant Collins and can be accessed for free at https:
   Capture sensitive files and achieve persistence "backdoor" inside the business network so that we can log back in at our discretion. Our attacker is financially motivated, attempting to steal sensitive data. They have identified ProjectX    as a target organization to conduct their operations so they can extort and steal sensitive information, perhaps a username, password, and a propietary file.
 
 # Tools
- * Microsoft Active Directory: A directory service used for managing and organizing network resources and permissions in a Windows environment.
+ * Microsoft Active Directory: A directory service developed by Microsoft used for managing and organizing network resources and permissions in a Windows environment.
    - Key Components:
       * Authentication: Verifies user identity using credentials like username and password
       * Authorization: Grants or denies access to network resources based on permissions
       * Centralized Management: Centralizes control over users, computers, and other resources
-     
+ 
  * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
  * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
 
