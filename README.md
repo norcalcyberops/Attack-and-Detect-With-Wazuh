@@ -36,6 +36,11 @@ This project was created by Grant Collins and can be accessed for free at https:
     - Centralized Management: Simplifies monitoring and management, providing a single point for handling logs, alerts, and vulnerability data.
 
   (We will be using Wazuh as our open-source security tool to monitor and detect our simulated "attack")
+
+   * Security Server Architecture
+   
+![Screenshot 2025-02-05 201101](https://github.com/user-attachments/assets/a939f5ec-c157-4247-a64f-d98686d17c1b)
+
    
  * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
 
