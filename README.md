@@ -1,7 +1,9 @@
 # Attack and Detect With Wazuh
 
 # Objective
+
 SOC analysts must possess the essential skills to understand and detect attacks from both offensive and defensive perspectives. In this home lab, I simulated a business network called "ProjectX", introduced vulnerable configurations, performed a multi-phase end-to-end attack, and identified specific activities with detection rules and alerts created in Wazuh. 
+
 This project was created by Grant Collins and can be accessed for free at https://projectsecurity.io/
 
 # Skills Involved
