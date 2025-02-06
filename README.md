@@ -20,6 +20,11 @@ This project was created by Grant Collins and can be accessed for free at https:
 # End Goal
   Capture sensitive files and achieve persistence "backdoor" inside the business network so that we can log back in at our discretion. Our attacker is financially motivated, attempting to steal sensitive data. They have identified ProjectX    as a target organization to conduct their operations so they can extort and steal sensitive information, perhaps a username, password, and a propietary file.
 
+# Tools
+ * Microsoft Active Directory: A directory service used for managing and organizing network resources and permissions in a Windows environment.
+ * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
+ * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
+
 # Main Steps
 
 1. Build an Enterprise Environment.
@@ -32,12 +37,6 @@ This project was created by Grant Collins and can be accessed for free at https:
 
 As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
 
- # Tools
-
- * Microsoft Active Directory: A directory service used for managing and organizing network resources and permissions in a Windows environment.
- * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
- * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
-  
 2. Introduce Vulnerable Configurations
 
    In order to conduct the end-to-end attack, a number of vulnerable configurations were introduced into the environment.
