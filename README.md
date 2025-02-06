@@ -30,6 +30,9 @@ This project was created by Grant Collins and can be accessed for free at https:
  * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
  * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
 
+![Screenshot 2025-02-05 195441](https://github.com/user-attachments/assets/a984ae85-7464-45f1-92cc-777af9e838f3)
+
+
 # Security Implications
   
   * Enhanced Security Awareness:
