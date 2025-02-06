@@ -12,5 +12,6 @@ This project was created by Grant Collins and can be accessed for free at https:
 # Main Steps
 1. Build the Enterprise Environment
   The first step of the project involved building the enterprise environment using VirtualBox
-![image](https://github.com/user-attachments/assets/3495c6dc-090a-437f-afcb-6ded65e14a6e)
+![Screenshot 2025-02-05 173214](https://github.com/user-attachments/assets/c947abc2-27de-4d0b-b80b-503681dfdf4c)
+
   As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
