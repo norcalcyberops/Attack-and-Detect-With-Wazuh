@@ -14,3 +14,10 @@ This project was created by Grant Collins and can be accessed for free at https:
 ![Screenshot 2025-02-05 173214](https://github.com/user-attachments/assets/c947abc2-27de-4d0b-b80b-503681dfdf4c)
 
     As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
+2. Introduce Vulnerable Configurations
+   In order to conduct the end-to-end attack, a number of vulnerabile configurations were introduced into the environment.
+
+Install and/or enable SSH (port 22) and RDP (port 3389) on relevant machines.
+Install and enable Linux firewall on relevant machines.
+Allow relevant services and ports (22 & 3389) on firewalls.
+Create an intentionally weak password on the email server to create susceptiblity to brute force attack.
