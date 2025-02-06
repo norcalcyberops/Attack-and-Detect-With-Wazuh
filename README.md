@@ -28,6 +28,13 @@ This project was created by Grant Collins and can be accessed for free at https:
       * Centralized Management: Centralizes control over users, computers, and other resources
  
  * Wazuh: An open-source security monitoring platform that provides intrustion detection, log analysis, vulnerability detection, and compliance reporting.
+   A dedicated security server is critical for ensuring the performance, security, and scalability of your monitored analysis stack. Here's why:
+    - Isolation: Running resource-intensive tools on a dedicated server prevents performance degradation caused by workloads on shared resources. Each application demands significant CPU, RAM, and disk I/O to function efficiently.
+    - Security Context: Security tools process sensitive data, including logs and vulnerability scans. A dedicated server isolates sensitive data from unrelated systems.
+    - Centralized Management: Simplifies monitoring and management, providing a single point for handling logs, alerts, and vulnerability data.
+
+  (We will be using Wazuh as our open-source security tool to monitor and detect our simulated "attack")
+   
  * Postfix: A popular open-source mail transfer agent (MTA) used for sending and receiving email on Unix-like operating systems.
 
 ![Screenshot 2025-02-05 195441](https://github.com/user-attachments/assets/a984ae85-7464-45f1-92cc-777af9e838f3)
