@@ -80,3 +80,6 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
          - decoder.name is sshd
          - rule.groups contains authentication_failed
+      
+   ![Screenshot 2025-02-05 184601](https://github.com/user-attachments/assets/2fd4a4d8-0c93-4fb5-8efa-680d437cec1a)
+
