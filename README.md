@@ -27,12 +27,12 @@ This project was created by Grant Collins and can be accessed for free at https:
      * Create an intentionally weak password on the email server to create susceptiblity to brute force attack.
 3. Create Detection Rules in Wazuh
    - In order to detect activities from the end-to-end attack, three rules and alerts were created in Wazuh.
-     * Rule to detect RDP logins. Windows does not have an event ID specifically for WinRM so a rule was created to detect authentication via Kerberos (which WinRM uses for remote connections) and successful logins. Specifically, two filters        were used:
+     1. Rule to detect RDP logins. Windows does not have an event ID specifically for WinRM so a rule was created to detect authentication via Kerberos (which WinRM uses for remote connections) and successful logins. Specifically, two filters         were used:
        - data.win.eventdata.logonProcessName is Kerberos
        - data.win.system.eventID is 4624
-     * Rule to monitor access of sensitive data (file integrity monitoring). This rule used two filters:
+     2. Rule to monitor access of sensitive data (file integrity monitoring). This rule used two filters:
        - full_log contains secrets.txt (the file containing the "sensitive" data)
        - syscheck.event is modified
-     * Rule to detect 3 failed SSH login attempts. This rule used two filters:
+     3. Rule to detect 3 failed SSH login attempts. This rule used two filters:
        - decoder.name is sshd
        - rule.groups contains authentication_failed
