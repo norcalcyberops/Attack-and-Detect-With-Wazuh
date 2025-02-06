@@ -22,13 +22,13 @@ This project was created by Grant Collins and can be accessed for free at https:
 
 1. Build an Enterprise Environment.
 
-   The first step of the project involved building the enterprise environment using VirtualBox
+The first step of the project involved building the enterprise environment using VirtualBox
 
 ![Screenshot 2025-02-05 173214](https://github.com/user-attachments/assets/c947abc2-27de-4d0b-b80b-503681dfdf4c)
 
-    As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
+ As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
 
-3. Introduce Vulnerable Configurations
+2. Introduce Vulnerable Configurations
 
    In order to conduct the end-to-end attack, a number of vulnerable configurations were introduced into the environment.
      - Install and/or enable SSH (port 22) and RDP (port 3389) on relevant machines.
@@ -36,7 +36,7 @@ This project was created by Grant Collins and can be accessed for free at https:
      - Allow relevant services and ports (22 & 3389) on firewalls.
      - Create an intentionally weak password on the email server to create susceptiblity to brute force attack.
 
-4. Create Detection Rules in Wazuh
+3. Create Detection Rules in Wazuh
 
    In order to detect activities from the end-to-end attack, three rules and alerts were created in Wazuh.
 
