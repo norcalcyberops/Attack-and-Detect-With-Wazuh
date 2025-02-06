@@ -10,8 +10,8 @@ This project was created by Grant Collins and can be accessed for free at https:
 # End Goal
   Capture sensitive files and achieve persistence "backdoor" inside the business network so that we can log back in at our discretion. Our attacker is financially motivated, attempting to steal   sensitive data. They have identified ProjectX as a target organization to conduct their operations so they can extort and steal sensitive information, perhaps a username, password, and a        propietary file.
 # Main Steps
-Build the Enterprise Environment.
-1. The first step of the project involved building the enterprise environment using VirtualBox
+1. Build the Enterprise Environment.
+The first step of the project involved building the enterprise environment using VirtualBox
 ![Screenshot 2025-02-05 173214](https://github.com/user-attachments/assets/c947abc2-27de-4d0b-b80b-503681dfdf4c)
 
   As shown in the topology above, the Email Server and three PC's were connected to the Active Directory domain controller.
