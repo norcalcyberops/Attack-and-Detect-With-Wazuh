@@ -85,13 +85,46 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
 4. Conduct End-to-End Attacks
 
-   Using Kali Linux as the attacker machine, an end-to-end multi-phase attack was conducted involving a number to tactics.
+   Using Kali Linux as the attacker machine, an end-to-end multi-phase attack was conducted involving a number of tactics.
 
-   Initial reconnaissance - Nmap scan to scan ports on the Email-svr machine at 10.0.0.8
+   Initial Reconnaissance - Nmap scan to scan ports on the Email-Svr machine at 10.0.0.8:
 
    ![Screenshot 2025-02-05 185054](https://github.com/user-attachments/assets/92393d14-367f-4226-920f-ab2ecdbfe3da)
 
+   Nmap scan identified two open ports with their relative service and version:
+    * Port 22/tcp: ssh OpenSSH
+    * Port 25/tcp: smtp Postfix smtpd
+
    ![Screenshot 2025-02-05 185634](https://github.com/user-attachments/assets/6481624a-33d2-41a0-a4e3-bc81f1da64cb)
+
+   Since port 22 (SSH) was open, I attempted to establish an SSH connection. I logged in as "root" and the results show that password authentication is enabled:
+
+   ![Screenshot 2025-02-05 190927](https://github.com/user-attachments/assets/d6f7fb04-6063-470a-8c98-66e83293828d)
+
+   Using Hydra and the rockyou.txt password list, I conducted a brute force attack on the SSH password:
+
+   ![Screenshot 2025-02-05 191212](https://github.com/user-attachments/assets/88a60e08-3501-4065-890e-5a3ad16e4374)
+
+   Hydra identified an account and password (login:root password: november)
+   
+   ![Screenshot 2025-02-05 191512](https://github.com/user-attachments/assets/747d080b-7330-4a01-9d19-947553b41830)
+
+   Using the obtained credentials from Hydra, I accessed the machine via SSH and conducted further reconnaissance on the machine, identifying the OS, hostname, installed and running services, file structure, configuration files, and           usernames from the /etc/passwd file. This revealed an account named "email-svr" which became the target.
+
+   ![Screenshot 2025-02-05 192212](https://github.com/user-attachments/assets/b229d040-6e1e-4ceb-8ef8-92b0c2d0a018)
+
+   ![Screenshot 2025-02-05 192458](https://github.com/user-attachments/assets/439145be-bfb3-4d07-b865-27319585732b)
+
+   After lateral movement to this account, I investigated the contents of the home directory, which further suggested that the machine was functioning as an email server.
+
+   ![Screenshot 2025-02-05 193032](https://github.com/user-attachments/assets/d4299e1d-57c0-4a6d-9ec2-beac3463f241)
+
+   
+   
+
+
+   
+
 
 
 
