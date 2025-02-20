@@ -156,29 +156,50 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 111725](https://github.com/user-attachments/assets/a859aa01-1add-4d20-8148-41c4b27637b4)
 
-   I conducted a scan of the Windows workstation and port probed 5985 and 5986 "HTTP/HTTPS" which is WinRM - remote management tool that Administrators can sign into and can be exploited.
+   I conducted an nmap scan of the Windows workstation and port probed 5985 and 5986 "HTTP/HTTPS" - ports for WinRM - remote management tool that allows Administrators to manage and interact with remote computers. WinRM has been heavily      abused in the past to perform lateral movement and privige escalation.
 
    ![Screenshot 2025-02-20 112918](https://github.com/user-attachments/assets/a7c24cf9-efe0-4f75-a94a-e1e85d4f5c84)
 
-   Using this protocol and NetExec tool, I conducted a password spray attack focusing on the Windows workstation. This attack revealed the credentials for "Administrator"
+   Using this protocol and NetExec (powerful tool used to compromise services within a network), I conducted a password spray attack focusing on the Windows workstation. This attack revealed the credentials for "Administrator"
 
    ![Screenshot 2025-02-20 114132](https://github.com/user-attachments/assets/deec07e1-de67-40a6-b3c3-46d2a5508fb7)
 
-   Using "Evil-Winrm" which is an open-source tool that installed on Kali which automates brute forcing using the WinRm protocol to attempt to move laterally into the network by compromising domain credentials and gaining a shell into the    Windows workstation. 
+   Using "Evil-Winrm" which is an open-source, command tool that installed on Kali which automates brute forcing using the WinRm protocol to attempt to move laterally into the network by compromising domain credentials and gaining a          remote shell into the Windows workstation over WinRM.
 
    ![Screenshot 2025-02-20 115231](https://github.com/user-attachments/assets/002182b1-2e44-4ec9-8955-7a5b75dab5a7)
 
    ![Screenshot 2025-02-20 120644](https://github.com/user-attachments/assets/ffa35454-dd0c-403f-bfd3-63043258b291)
 
-   Performed a (nltest / dsgetdc:) which revealed the IP address of the domain controller. With further reconaissance with an nmap scan of the DC, one particular service that stands out is 3389 - RDP (which you are able to sign into          domain and remotely administer with GUI). Using this information, I attempted to access the domain controller using xfreerdp and was successful, resulting in further lateral movement:
+   Performed a (nltest / dsgetdc:) which revealed the IP address of the domain controller. With further reconaissance with an nmap scan of the DC, one particular service that stands out is 3389 - RDP (which you are able to sign into          domain and remotely administer with UI). Using this information, I attempted to access the domain controller using xfreerdp and was successful, resulting in further lateral movement. Navigating around the file system, we eventually        found a folder called "Production Documents" inside the Documents folder with a file called "secrets.txt"
 
    ![Screenshot 2025-02-20 120434](https://github.com/user-attachments/assets/c9157719-3ed8-4580-9b01-fc192ad33b52)
    
    ![Screenshot 2025-02-20 121338](https://github.com/user-attachments/assets/41107e20-75d1-4ca2-a6a5-fa5652e30f6a)
 
-   
+   After finding the file called "secrets.txt" residing on the DC, I attempted Data Exfiltration. Using "scp" to copy the files to my Kali VM and was successful.
+
+   ![Screenshot 2025-02-20 125108](https://github.com/user-attachments/assets/38265908-c6b5-4f6e-bcab-482ebd66e032)
+
+   ![Screenshot 2025-02-20 125429](https://github.com/user-attachments/assets/f773685c-4d14-4ef1-bb71-8ac7fb89896c)
+
+   Now that we have effectively pwnd the environment, it's time to ensure we can come back to where we left off and maintain Persistence.
+
+   Persistence refers to attackers maintaing access to a system even after their initial intrusion is discovered and remediated. This ensures the attacker's operations can continue despite interruptions. Common techniques include             installing backdoors, creating rogue accounts, or leveraging legitimate tools for remote access like RDP or VPNs.
+
+   One of the easiest methods of establishing Persistence is by creating a new user account. I created a new user called "project-x-user", added this user to the Administrators group and to the Domain Admins. 
+
+   ![Screenshot 2025-02-20 130815](https://github.com/user-attachments/assets/920c48f5-0151-4797-9a8a-c0e6d9652622)
+
+   ![Screenshot 2025-02-20 131007](https://github.com/user-attachments/assets/9cc81f21-c53b-4f24-a074-7a55aa8e681d)
+
+   Scheduled Task with Reverse Shell
+
+   In Kal VM, I created a 
+
+   After creating a new user, I created a Scheduled Task which will run a backdoor.
 
    
+
    
    
 
