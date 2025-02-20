@@ -168,10 +168,14 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 115231](https://github.com/user-attachments/assets/002182b1-2e44-4ec9-8955-7a5b75dab5a7)
 
-   This revealed the IP address of the domain controller. With further reconaissance with an nmap scan of the DC, one particular service that stands out is 3389 - RDP (which you are able to sign into domain and remotely administer).
+   ![Screenshot 2025-02-20 120644](https://github.com/user-attachments/assets/ffa35454-dd0c-403f-bfd3-63043258b291)
+
+   Performed a (nltest / dsgetdc:) which revealed the IP address of the domain controller. With further reconaissance with an nmap scan of the DC, one particular service that stands out is 3389 - RDP (which you are able to sign into          domain and remotely administer with GUI). Using this information, I attempted to access the domain controller using xfreerdp and was successful, resulting in further lateral movement:
 
    ![Screenshot 2025-02-20 120434](https://github.com/user-attachments/assets/c9157719-3ed8-4580-9b01-fc192ad33b52)
+   
 
+   
    
    
 
