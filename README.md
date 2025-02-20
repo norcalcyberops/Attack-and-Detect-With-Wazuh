@@ -194,12 +194,25 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    Scheduled Task with Reverse Shell
 
-   In Kal VM, I created a 
+   In Kali, I created a basic reverse shell script called "reverse.ps1". Using a python webserver to upload the copy from [project-x-attacker] to [project-x-dc], from where the reverse.ps1 script is, I performed the following syntax in       the command line: python -m http.server
 
-   After creating a new user, I created a Scheduled Task which will run a backdoor.
+   I navigated to http://10.0.0.50:8000 and downloaded the reverse.ps1 file and moved the file
 
+   ![Screenshot 2025-02-20 133421](https://github.com/user-attachments/assets/3bf34682-df93-4e62-9afa-95490b01f21f)
+
+   ![Screenshot 2025-02-20 134939](https://github.com/user-attachments/assets/bd14d8de-73e0-46e4-9f08-0d0636384766)
+
+   As an additional means of Persistence, I ran the Powershell script which created a Scheduled Task daily at 12:00 with the purpose of creating a backdoor.
+
+   ![Screenshot 2025-02-20 135425](https://github.com/user-attachments/assets/39731637-24c4-4140-9fc9-67b744bbb46d)
+
+   ![Screenshot 2025-02-20 141301](https://github.com/user-attachments/assets/7fb981f6-d250-4029-9ead-8170d55e7736)
    
+   The scheduled task was succesfully created:
+   
+   ![Screenshot 2025-02-20 142107](https://github.com/user-attachments/assets/5856f6e8-cab1-4852-b9c3-7dea355ec6aa)
 
+  
    
    
 
