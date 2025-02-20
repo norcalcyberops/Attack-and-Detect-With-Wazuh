@@ -165,10 +165,14 @@ As shown in the topology above, the Email Server and three PC's were connected t
    ![Screenshot 2025-02-20 114132](https://github.com/user-attachments/assets/deec07e1-de67-40a6-b3c3-46d2a5508fb7)
 
    Using "Evil-Winrm" which is an open-source, command tool that installed on Kali which automates brute forcing using the WinRm protocol to attempt to move laterally into the network by compromising domain credentials and gaining a          remote shell into the Windows workstation over WinRM.
+
+   Performed a (nltest / dsgetdc:) which revealed the IP address of the domain controller - very high value target. With further reconaissance by performing an nmap scan of the DC, one particular service that is running that stands out is    3389 - Remote Desktop Protocol (which you are able to sign into the domain controller and remotely administer with UI).
+
+   Using this information, I attempted to access the domain controller using xfreerdp and was successful, resulting in further Lateral Movement.
+
+   Navigation around the file system, I eventually found a folder called "Production Documents" and within the foler a file called "secrets.txt."
    
    ![Screenshot 2025-02-20 120644](https://github.com/user-attachments/assets/ffa35454-dd0c-403f-bfd3-63043258b291)
-
-   Performed a (nltest / dsgetdc:) which revealed the IP address of the domain controller. With further reconaissance with an nmap scan of the DC, one particular service that stands out is 3389 - RDP (which you are able to sign into          domain and remotely administer with UI). Using this information, I attempted to access the domain controller using xfreerdp and was successful, resulting in further lateral movement. Navigating around the file system, we eventually        found a folder called "Production Documents" inside the Documents folder with a file called "secrets.txt"
 
    ![Screenshot 2025-02-20 121338](https://github.com/user-attachments/assets/41107e20-75d1-4ca2-a6a5-fa5652e30f6a)
 
