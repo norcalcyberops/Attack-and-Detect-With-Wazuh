@@ -214,7 +214,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
    
    ![Screenshot 2025-02-20 142107](https://github.com/user-attachments/assets/5856f6e8-cab1-4852-b9c3-7dea355ec6aa)
 
-6. Wazuh Alerts and Logs (Triage as a SOC Analyst)
+  # Wazuh Alerts and Logs (Triage as a SOC Analyst)
   
    The 3 rules created earlier in Wazuh successfully detected the relevant activity and alerts were generated:
 
