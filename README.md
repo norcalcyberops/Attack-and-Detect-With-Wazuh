@@ -206,8 +206,6 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 135425](https://github.com/user-attachments/assets/39731637-24c4-4140-9fc9-67b744bbb46d)
 
-   ![Screenshot 2025-02-20 141301](https://github.com/user-attachments/assets/7fb981f6-d250-4029-9ead-8170d55e7736)
-   
    The scheduled task was succesfully created:
    
    ![Screenshot 2025-02-20 142107](https://github.com/user-attachments/assets/5856f6e8-cab1-4852-b9c3-7dea355ec6aa)
