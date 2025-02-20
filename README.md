@@ -212,8 +212,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
    
    ![Screenshot 2025-02-20 142107](https://github.com/user-attachments/assets/5856f6e8-cab1-4852-b9c3-7dea355ec6aa)
 
-  
-   5. Wazuh Alerts and Logs (Triage as a SOC Analyst)
+5. Wazuh Alerts and Logs (Triage as a SOC Analyst)
   
    The 3 rules created earlier in Wazuh successfully detected the relevant activity and alerts were generated:
 
@@ -239,7 +238,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    # Conclusion
 
-   I have finished my attack from Reconnaissance, Scanning, Initial Access, Maintaining Access, Privilege Escalation and to Persistence. This homelab's intention was to serve as a primer for how threat actors approach compromising a          target organization. With various tools, techniques, and procedures (TTP's), threat actors can leverage their skills, open-source knowledge, and now LLMs to achieve their objective.
+   I have finished my attack from Reconnaissance, Initial Access, Lateral Movement, Privilege Escalation, Data Exfiltration, and Persistence. This homelab's intention was to serve as a primer for how threat actors approach compromising a     target organization. With various tools, techniques, and procedures (TTP's), threat actors can leverage their skills, open-source knowledge, and now LLMs to achieve their objective.
 
 
 
