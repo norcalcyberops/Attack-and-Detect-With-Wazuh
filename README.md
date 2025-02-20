@@ -196,7 +196,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    In Kali, I created a basic reverse shell script called "reverse.ps1". Using a python webserver to upload the copy from [project-x-attacker] to [project-x-dc], from where the reverse.ps1 script is, I performed the following syntax in       the command line: python -m http.server
 
-   I navigated to http://10.0.0.50:8000 and downloaded the reverse.ps1 file and moved the file
+   I navigated to the hosted server and downloaded the reverse.ps1 file and moved the file
 
    ![Screenshot 2025-02-20 133421](https://github.com/user-attachments/assets/3bf34682-df93-4e62-9afa-95490b01f21f)
 
