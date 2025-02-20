@@ -219,19 +219,27 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 143548](https://github.com/user-attachments/assets/777996f1-6520-4915-9051-ad03da799e9b)
 
+
    File integrity compromise of "secrets.txt"
 
    ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_37_34](https://github.com/user-attachments/assets/cbffa61e-365d-4313-8f38-1afd9624a6d6)
 
+   -look down at syscheck.diff-
    ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_44_06](https://github.com/user-attachments/assets/0e1c0bf4-f737-497f-be8a-e9ed94b7c53e)
 
-   *look down at syscheck.diff*
 
    WinRM (Kerberos) logins:
 
    ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_52_30](https://github.com/user-attachments/assets/b03fcd78-506e-4b7a-b266-d360a1c5888f)
 
-   
+
+   Failed SSH login attempts:
+
+   ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_58_31](https://github.com/user-attachments/assets/c6c70c58-260a-4c70-b3c4-6820010471a1)
+
+   # Conclusion
+
+   I have finished my attack from Reconnaissance, Scanning, Initial Access, Maintaining Access, Privilege Escalation and to Persistence. This homelab's intention was to serve as a primer for how threat actors approach compromising a          target organization. With various tools, techniques, and procedures (TTP's), threat actors can leverage their skills, open-source knowledge, and now LLMs to achieve their objective.
 
 
 
