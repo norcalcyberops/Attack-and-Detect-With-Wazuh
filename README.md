@@ -176,11 +176,13 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 121338](https://github.com/user-attachments/assets/41107e20-75d1-4ca2-a6a5-fa5652e30f6a)
 
-   After finding the file called "secrets.txt" residing on the DC, I attempted Data Exfiltration. Using "scp" to copy the files to my Kali and named the file "my_senstive_file" and was successful.
+   After finding the file called "secrets.txt" residing on the DC, I attempted Data Exfiltration. Using "scp" to copy the files to my Kali and named the file "my_sensitive_file" and was successful.
 
    ![Screenshot 2025-02-20 153441](https://github.com/user-attachments/assets/59c34ab1-61e4-433d-8034-8d6526a5f0ee)
 
    ![Screenshot 2025-02-20 125429](https://github.com/user-attachments/assets/f773685c-4d14-4ef1-bb71-8ac7fb89896c)
+
+   #Persistence
 
    Now that we have effectively pwnd the environment, it's time to ensure we can come back to where we left off and maintain Persistence.
 
