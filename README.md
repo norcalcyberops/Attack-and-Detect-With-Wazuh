@@ -213,7 +213,18 @@ As shown in the topology above, the Email Server and three PC's were connected t
    ![Screenshot 2025-02-20 142107](https://github.com/user-attachments/assets/5856f6e8-cab1-4852-b9c3-7dea355ec6aa)
 
   
-   
+   5. Wazuh Alerts and Logs (Triage as a SOC Analyst)
+  
+   The 3 rules created earlier in Wazuh successfully detected the relevant activity and alerts were generated:
+
+   ![Screenshot 2025-02-20 143548](https://github.com/user-attachments/assets/777996f1-6520-4915-9051-ad03da799e9b)
+
+   File integrity compromise of "secrets.txt"
+
+   ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_37_34](https://github.com/user-attachments/assets/cbffa61e-365d-4313-8f38-1afd9624a6d6)
+
+   ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_44_06](https://github.com/user-attachments/assets/0e1c0bf4-f737-497f-be8a-e9ed94b7c53e)
+
    
 
 
