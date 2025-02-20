@@ -170,11 +170,9 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    Performed a (nltest / dsgetdc:) which revealed the IP address of the domain controller. With further reconaissance with an nmap scan of the DC, one particular service that stands out is 3389 - RDP (which you are able to sign into          domain and remotely administer with UI). Using this information, I attempted to access the domain controller using xfreerdp and was successful, resulting in further lateral movement. Navigating around the file system, we eventually        found a folder called "Production Documents" inside the Documents folder with a file called "secrets.txt"
 
-   ![Screenshot 2025-02-20 120434](https://github.com/user-attachments/assets/c9157719-3ed8-4580-9b01-fc192ad33b52)
-   
    ![Screenshot 2025-02-20 121338](https://github.com/user-attachments/assets/41107e20-75d1-4ca2-a6a5-fa5652e30f6a)
 
-   After finding the file called "secrets.txt" residing on the DC, I attempted Data Exfiltration. Using "scp" to copy the files to my Kali VM and was successful.
+   After finding the file called "secrets.txt" residing on the DC, I attempted Data Exfiltration. Using "scp" to copy the files to my Kali and named the file "my_senstive_file" and was successful.
 
    ![Screenshot 2025-02-20 153441](https://github.com/user-attachments/assets/59c34ab1-61e4-433d-8034-8d6526a5f0ee)
 
