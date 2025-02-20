@@ -223,7 +223,8 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_37_34](https://github.com/user-attachments/assets/cbffa61e-365d-4313-8f38-1afd9624a6d6)
 
-   -look down at syscheck.diff-
+   -pay attention to syscheck.diff where you can see the altered changes to the file
+   
    ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_44_06](https://github.com/user-attachments/assets/0e1c0bf4-f737-497f-be8a-e9ed94b7c53e)
 
 
