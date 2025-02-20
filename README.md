@@ -194,7 +194,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 131007](https://github.com/user-attachments/assets/9cc81f21-c53b-4f24-a074-7a55aa8e681d)
 
-   Scheduled Task with Reverse Shell
+   1. Scheduled Task with Reverse Shell
 
    In Kali, I created a basic reverse shell script called "reverse.ps1". Using a python webserver to upload the copy from [project-x-attacker] to [project-x-dc], from where the reverse.ps1 script is, I performed the following syntax in       the command line: python -m http.server
 
