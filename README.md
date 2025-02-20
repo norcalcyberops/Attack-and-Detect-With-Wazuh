@@ -196,11 +196,13 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    In Kali, I created a basic reverse shell script called "reverse.ps1". Using a python webserver to upload the copy from [project-x-attacker] to [project-x-dc], from where the reverse.ps1 script is, I performed the following syntax in       the command line: python -m http.server
 
-   I navigated to the hosted server and downloaded the reverse.ps1 file and moved the file
+   I navigated to the hosted server and downloaded the reverse.ps1 file and moved the file then ran the reverse.ps1 script and you can see "Connected to reverse shell!"
 
    ![Screenshot 2025-02-20 133421](https://github.com/user-attachments/assets/3bf34682-df93-4e62-9afa-95490b01f21f)
 
    ![Screenshot 2025-02-20 134939](https://github.com/user-attachments/assets/bd14d8de-73e0-46e4-9f08-0d0636384766)
+
+   ![VirtualBox_ demo-project-x-attacker _20_02_2025_14_12_35](https://github.com/user-attachments/assets/1ca23409-79ff-4eef-9682-3c0b6772c82f)
 
    As an additional means of Persistence, I ran the Powershell script which created a Scheduled Task daily at 12:00 with the purpose of creating a backdoor.
 
@@ -210,7 +212,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
    
    ![Screenshot 2025-02-20 142107](https://github.com/user-attachments/assets/5856f6e8-cab1-4852-b9c3-7dea355ec6aa)
 
-5. Wazuh Alerts and Logs (Triage as a SOC Analyst)
+6. Wazuh Alerts and Logs (Triage as a SOC Analyst)
   
    The 3 rules created earlier in Wazuh successfully detected the relevant activity and alerts were generated:
 
