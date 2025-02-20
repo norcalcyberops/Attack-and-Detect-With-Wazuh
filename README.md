@@ -225,6 +225,12 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_44_06](https://github.com/user-attachments/assets/0e1c0bf4-f737-497f-be8a-e9ed94b7c53e)
 
+   *look down at syscheck.diff*
+
+   WinRM (Kerberos) logins:
+
+   ![VirtualBox_ demo-project-x-sec-box_20_02_2025_14_52_30](https://github.com/user-attachments/assets/b03fcd78-506e-4b7a-b266-d360a1c5888f)
+
    
 
 
