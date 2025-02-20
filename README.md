@@ -182,7 +182,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 125429](https://github.com/user-attachments/assets/f773685c-4d14-4ef1-bb71-8ac7fb89896c)
 
-   #Persistence
+   # Persistence
 
    Now that we have effectively pwnd the environment, it's time to ensure we can come back to where we left off and maintain Persistence.
 
