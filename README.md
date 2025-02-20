@@ -135,7 +135,53 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    After lateral movement to this account, I investigated the contents of the home directory, which further suggested that the machine was functioning as an email server.
 
-   ![Screenshot 2025-02-05 193032](https://github.com/user-attachments/assets/d4299e1d-57c0-4a6d-9ec2-beac3463f241)
+   ![Screenshot 2025-02-20 101728](https://github.com/user-attachments/assets/81467c03-9992-46ba-9f16-feaf64e6cee0)
+
+   ![Screenshot 2025-02-20 102123](https://github.com/user-attachments/assets/81fc8c92-ac17-4a01-902b-dad9bbf08ed1)
+
+   After doing enumeration on the emails on the server revealed mail previously sent to janed[@]corp.project-x-dc.com.
+   I created a web page for harvesting credentials from the user:
+   
+   ![Screenshot 2025-02-20 103308](https://github.com/user-attachments/assets/7a630a46-3039-4d22-80c7-60c0001712d6)
+
+   I created a phishing email with the embedded link to the "credentials harvesting" page which when the user enter their credentials it captured the input into a log file on my attacker machine called (creds.log):
+
+   ![Screenshot 2025-02-20 104341](https://github.com/user-attachments/assets/bbd33827-0b51-41c4-936a-fef92495db2e)
+
+   ![Screenshot 2025-02-20 105102](https://github.com/user-attachments/assets/9c6e2265-7202-4b0c-8f47-d4dfb91af564)
+
+   ![Screenshot 2025-02-20 110350](https://github.com/user-attachments/assets/d9170977-fd11-4925-a2de-4236c847d4c9)
+
+   Using these captured credentials, I SSH into janed workstation (which had been previously identified via the network scan), and conducted lateral movement and privilege escalation.
+
+   ![Screenshot 2025-02-20 111725](https://github.com/user-attachments/assets/a859aa01-1add-4d20-8148-41c4b27637b4)
+
+   I conducted a scan of the Windows workstation and port probed 5985 and 5986 "HTTP/HTTPS" which is WinRM - remote management tool that Administrators can sign into and can be exploited.
+
+   ![Screenshot 2025-02-20 112918](https://github.com/user-attachments/assets/a7c24cf9-efe0-4f75-a94a-e1e85d4f5c84)
+
+   Using this protocol and NetExec tool, I conducted a password spray attack focusing on the Windows workstation. This attack revealed the credentials for "Administrator"
+
+   ![Screenshot 2025-02-20 114132](https://github.com/user-attachments/assets/deec07e1-de67-40a6-b3c3-46d2a5508fb7)
+
+   Using "Evil-Winrm" which is an open-source tool that installed on Kali which automates brute forcing using the WinRm protocol to attempt to move laterally into the network by compromising domain credentials and gaining a shell into the    Windows workstation. 
+
+   ![Screenshot 2025-02-20 115231](https://github.com/user-attachments/assets/002182b1-2e44-4ec9-8955-7a5b75dab5a7)
+
+   This revealed the IP address of the domain controller. With further reconaissance with an nmap scan of the DC, one particular service that stands out is 3389 - RDP (which you are able to sign into domain and remotely administer).
+
+   ![Screenshot 2025-02-20 120434](https://github.com/user-attachments/assets/c9157719-3ed8-4580-9b01-fc192ad33b52)
+
+   
+   
+
+
+
+   
+
+
+
+
 
    
    
