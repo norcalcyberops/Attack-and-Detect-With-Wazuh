@@ -171,7 +171,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    Using this information, I attempted to access the domain controller using xfreerdp and was successful, resulting in further Lateral Movement.
 
-   Navigation around the file system, I eventually found a folder called "Production Documents" and within the foler a file called "secrets.txt."
+   Navigation around the file system, I eventually found a folder called "Production Documents" and within the folder a file called "secrets.txt."
    
    ![Screenshot 2025-02-20 120644](https://github.com/user-attachments/assets/ffa35454-dd0c-403f-bfd3-63043258b291)
 
