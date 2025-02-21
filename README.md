@@ -20,7 +20,7 @@ This project was created by Grant Collins and can be accessed for free at https:
 # End Goal
   Capture sensitive files and achieve persistence "backdoor" inside the business network so that we can log back in at our discretion. Our attacker is financially motivated, attempting to steal sensitive data. They have identified ProjectX    as a target organization to conduct their operations so they can extort and steal sensitive information, perhaps a username, password, and a propietary file.
 
-# Tools
+# Business Components
  * Microsoft Active Directory: A directory service developed by Microsoft used for managing and organizing network resources and permissions in a Windows environment.
    - Key Components:
       * Authentication: Verifies user identity using credentials like username and password
