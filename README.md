@@ -113,7 +113,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-05 185634](https://github.com/user-attachments/assets/6481624a-33d2-41a0-a4e3-bc81f1da64cb)
 
-   Since port 22 (SSH) was open, I attempted to establish an SSH connection. I logged in as "root" and the results show that password authentication is enabled:
+   Since Port 22 (SSH) was open, I attempted to establish an SSH connection. I logged in as "root" and the results show that password authentication is enabled:
 
    ![Screenshot 2025-02-05 190927](https://github.com/user-attachments/assets/d6f7fb04-6063-470a-8c98-66e83293828d)
 
@@ -153,11 +153,11 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 110350](https://github.com/user-attachments/assets/d9170977-fd11-4925-a2de-4236c847d4c9)
 
-   Using these captured credentials, I SSH into janed workstation (which had been previously identified via the network scan), and conducted lateral movement and privilege escalation.
+   Using these captured credentials, I SSH into janed Linux workstation (which had been previously identified via the network scan), and conducted Lateral Movement and Privilege Escalation.
 
    ![Screenshot 2025-02-20 111725](https://github.com/user-attachments/assets/a859aa01-1add-4d20-8148-41c4b27637b4)
 
-   I conducted an nmap scan of the Windows workstation and port probed 5985 and 5986 "HTTP/HTTPS" - ports for WinRM - remote management tool that allows Administrators to manage and interact with remote computers. WinRM has been heavily      abused in the past to perform lateral movement and privige escalation.
+   I conducted an Nmap scan of the Windows workstation and port probed 5985 and 5986 "HTTP/HTTPS" - ports for WinRM - remote management tool that allows Administrators to manage and interact with remote computers. WinRM has been heavily      abused in the past to perform lateral movement and privige escalation.
 
    ![Screenshot 2025-02-20 112918](https://github.com/user-attachments/assets/a7c24cf9-efe0-4f75-a94a-e1e85d4f5c84)
 
