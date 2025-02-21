@@ -139,12 +139,13 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 102123](https://github.com/user-attachments/assets/81fc8c92-ac17-4a01-902b-dad9bbf08ed1)
 
-   After performing enumeration, emails on the server revealed mail previously sent to janed[@]corp.project-x-dc.com.
+   After performing reconnaissance, prior emails (on the email-svr) revealed mail previously sent to janed[@]corp.project-x-dc.com.
+
    I created a web page for harvesting credentials from the user:
    
    ![Screenshot 2025-02-20 103308](https://github.com/user-attachments/assets/7a630a46-3039-4d22-80c7-60c0001712d6)
 
-   I created a phishing email with the embedded link to the "credentials harvesting" page which when the user enter their credentials it captured the input into a log file on my attacker machine called (creds.log):
+   I created a phishing email with the embedded link to the "credentials harvesting" page which when the user (janed) entered her credentials, it captured the input into a log file on my Kali attacker machine called (creds.log):
 
    ![Screenshot 2025-02-20 104341](https://github.com/user-attachments/assets/bbd33827-0b51-41c4-936a-fef92495db2e)
 
