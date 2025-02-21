@@ -141,7 +141,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 102123](https://github.com/user-attachments/assets/81fc8c92-ac17-4a01-902b-dad9bbf08ed1)
 
-   After doing enumeration on the emails on the server revealed mail previously sent to janed[@]corp.project-x-dc.com.
+   After performing enumeration, emails on the server revealed mail previously sent to janed[@]corp.project-x-dc.com.
    I created a web page for harvesting credentials from the user:
    
    ![Screenshot 2025-02-20 103308](https://github.com/user-attachments/assets/7a630a46-3039-4d22-80c7-60c0001712d6)
