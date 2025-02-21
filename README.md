@@ -127,7 +127,9 @@ As shown in the topology above, the Email Server and three PC's were connected t
    
    ![Screenshot 2025-02-05 191512](https://github.com/user-attachments/assets/747d080b-7330-4a01-9d19-947553b41830)
 
-   Using the obtained credentials from Hydra, I accessed the machine via SSH and conducted further reconnaissance on the machine, identifying the OS, hostname, installed and running services, file structure, configuration files, and           usernames from the /etc/passwd file. This revealed an account named "email-svr" which became the target.
+   Using the obtained credentials from Hydra, I accessed the machine via SSH and conducted further reconnaissance on the machine, identifying the OS, hostname, installed and running services, file structure, configuration files, and          usernames from the /etc/passwd file. This revealed an account named "email-svr" which became the target.
+
+   ![Screenshot 2025-02-20 193110](https://github.com/user-attachments/assets/0ca72aab-a965-41d4-a189-9ba752b60ba7)
 
    ![Screenshot 2025-02-05 192212](https://github.com/user-attachments/assets/b229d040-6e1e-4ceb-8ef8-92b0c2d0a018)
 
