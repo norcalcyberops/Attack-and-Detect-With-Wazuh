@@ -107,8 +107,6 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    Initial Reconnaissance - Nmap scan to scan ports on the Email-Svr machine at 10.0.0.8:
 
-   ![Screenshot 2025-02-05 185054](https://github.com/user-attachments/assets/92393d14-367f-4226-920f-ab2ecdbfe3da)
-
    Nmap scan identified two open ports with their relative service and version:
     * Port 22/tcp: ssh OpenSSH
     * Port 25/tcp: smtp Postfix smtpd
