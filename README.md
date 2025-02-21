@@ -175,7 +175,7 @@ As shown in the topology above, the Email Server and three PC's were connected t
 
    ![Screenshot 2025-02-20 121338](https://github.com/user-attachments/assets/41107e20-75d1-4ca2-a6a5-fa5652e30f6a)
 
-   Navigation around the file system, I eventually found a folder called (Production Documents) and within the folder was a file called "secrets.txt"
+   Navigation around the file system, I eventually found a folder called (ProductionFiles) and within the folder was a file called "secrets.txt"
    
    After finding the file called "secrets.txt" residing on the DC, I attempted Data Exfiltration. Using "scp" to copy the files to my Kali and named the file "my_sensitive_file" and was successful.
 
